@@ -6,11 +6,11 @@ export const SignUp = () => {
   const dispatch = useDispatch();
   const handleSign = event => {
     event.preventDefault();
-    const formName = event.currentTarget.name.value;
-    const formEmail = event.currentTarget.email.value;
-    const formPassword = event.currentTarget.password.value;
-    console.log({ formName, formEmail, formPassword });
-    dispatch(signUp({ formName, formEmail, formPassword }));
+    const name = event.currentTarget.name.value;
+    const email = event.currentTarget.email.value;
+    const password = event.currentTarget.password.value;
+    console.log({ name, email, password });
+    dispatch(signUp({ name: name, email: email, password: password }));
     event.currentTarget.reset();
   };
 
@@ -29,7 +29,7 @@ export const SignUp = () => {
         <input type="password" name="password" required></input>
       </label>
 
-      <button type="submit">Sign In</button>
+      <button type="submit">Sign Up</button>
     </SignForm>
   );
 };
