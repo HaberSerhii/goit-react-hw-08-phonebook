@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const ContactsAddedList = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
 `;
