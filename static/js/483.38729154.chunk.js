@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgoit_react_hw_08_phonebook=self.webpackChunkgoit_react_hw_08_phonebook||[]).push([[483],{9262:function(o,t,e){e.r(t),e.d(t,{default:function(){return r}});var i=e(824),a=e.p+"static/media/videoBg.56441fcbb87daf6a532a.mp4",n=e(184);function r(){return(0,n.jsx)(i.xu,{position:"relative",top:"-150",children:(0,n.jsx)("video",{src:a,muted:!0,autoPlay:!0,loop:!0,position:"relative",top:"-150"})})}}}]);
+//# sourceMappingURL=483.38729154.chunk.js.map

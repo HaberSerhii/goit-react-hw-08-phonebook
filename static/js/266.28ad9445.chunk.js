@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgoit_react_hw_08_phonebook=self.webpackChunkgoit_react_hw_08_phonebook||[]).push([[266],{1266:function(e,t,o){o.r(t),o.d(t,{default:function(){return a}});var n=o(824),r=o(184);function a(){return(0,r.jsx)(n.xu,{bgImage:"url('https://images5.alphacoders.com/456/456536.jpg')",bgRepeat:"no-repeat",bgSize:"cover",align:"center",justify:"center",height:"150vh",position:"relative",top:"-150"})}}}]);
-//# sourceMappingURL=266.28ad9445.chunk.js.map
