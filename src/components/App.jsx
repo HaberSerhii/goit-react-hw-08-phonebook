@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Route, Routes, NavLink } from 'react-router-dom';
 import { Header } from './App.styled';
 import { Phonebook } from 'pages/Phonebook/Phonebook';
@@ -6,11 +6,14 @@ import { SignIn } from 'pages/SignIn/SignIn';
 import { SignUp } from 'pages/SignUp/SignUp';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectIsSignedIn } from 'redux/Auth/authSelectors';
-import { signOut } from 'redux/Auth/authOperations';
+import { refresh, signOut } from 'redux/Auth/authOperations';
 
 export const App = () => {
   const isSignedIn = useSelector(selectIsSignedIn);
   const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(refresh());
+  });
   return (
     <>
       <Header>
