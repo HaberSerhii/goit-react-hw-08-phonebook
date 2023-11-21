@@ -24,7 +24,7 @@ export default function Register() {
     },
     validationSchema: Yup.object({
       password: Yup.string()
-        .max(7, 'Повинно бути не менше 7 символів')
+        .max(10, 'Повинно бути не більше 10 символів')
         .required(`Обов'язково`),
       email: Yup.string()
         .email('Невірний формат електронної адреси')
