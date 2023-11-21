@@ -1,11 +1,14 @@
+import { signIn } from 'redux/Auth/authOperations';
 import { SignForm } from './SignIn.styled';
+import { useDispatch } from 'react-redux';
 
 export const SignIn = () => {
+  const dispatch = useDispatch();
   const handleSign = event => {
     event.preventDefault();
-    const formEmail = event.currentTarget.email.value;
-    const formPassword = event.currentTarget.password.value;
-    console.log({ formEmail, formPassword });
+    const email = event.currentTarget.email.value;
+    const password = event.currentTarget.password.value;
+    dispatch(signIn({ email, password }));
     event.currentTarget.reset();
   };
 

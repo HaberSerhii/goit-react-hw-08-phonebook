@@ -9,7 +9,6 @@ export const SignUp = () => {
     const name = event.currentTarget.name.value;
     const email = event.currentTarget.email.value;
     const password = event.currentTarget.password.value;
-    console.log({ name, email, password });
     dispatch(signUp({ name, email, password }));
     event.currentTarget.reset();
   };
