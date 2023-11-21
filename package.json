@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://HaberSerhii.github.io/goit-react-hw-08-phonebook/",
   "dependencies": {
+    "@chakra-ui/icons": "^2.1.1",
+    "@chakra-ui/react": "^2.8.2",
     "@reduxjs/toolkit": "^1.9.7",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
@@ -13,6 +15,7 @@
     "notiflix": "^3.2.6",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-hot-toast": "^2.4.1",
     "react-loader-spinner": "^5.4.5",
     "react-redux": "^8.1.3",
     "react-router-dom": "^6.19.0",
