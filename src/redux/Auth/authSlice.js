@@ -7,6 +7,7 @@ const authInitialState = {
     email: null,
   },
   token: null,
+  isSignedIn: false,
   isLoading: false,
   error: null,
 };
@@ -19,6 +20,7 @@ const authSlice = createSlice({
       .addCase(signUp.fulfilled, (state, action) => {
         state.userData = action.payload.user;
         state.token = action.payload.token;
+        state.signIn = true;
       })
       .addCase(signUp.pending, state => {
         state.isLoading = true;
@@ -30,6 +32,7 @@ const authSlice = createSlice({
       .addCase(signIn.fulfilled, (state, action) => {
         state.userData = action.payload.user;
         state.token = action.payload.token;
+        state.signIn = true;
       })
       .addCase(signIn.pending, state => {
         state.isLoading = true;
