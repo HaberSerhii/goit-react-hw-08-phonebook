@@ -13,7 +13,7 @@ export const Navigations = () => {
         _activeLink={{ bg: 'white', color: 'black' }}
         to="/"
       >
-        Home
+        Домашня сторінка
       </Button>
       {authenticated && (
         <Button
@@ -23,7 +23,7 @@ export const Navigations = () => {
           marginLeft={4}
           to="/contacts"
         >
-          Contacts
+          Телефона книга
         </Button>
       )}
     </nav>
