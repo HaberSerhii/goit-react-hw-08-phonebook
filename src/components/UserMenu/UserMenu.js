@@ -19,7 +19,7 @@ export const UserMenu = () => {
       gap={'20px'}
     >
       <Text color="white" fontWeight="700">
-        Welcome, {user.name}
+        Вітаю, {user.name}
       </Text>
       <Button
         type="button"

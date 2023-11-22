@@ -3,12 +3,7 @@ import videoBg from '../assets/videoBg.mp4';
 
 export default function Home() {
   return (
-    <Box
-      position={'relative'}
-      top={'-150'}
-      objectFit={'contain'}
-      height={'100%'}
-    >
+    <Box position={'relative'} top={'-150'} height={'100%'}>
       <Box
         position={'absolute'}
         top={'0'}
