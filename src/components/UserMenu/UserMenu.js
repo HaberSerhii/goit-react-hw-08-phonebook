@@ -18,7 +18,13 @@ export const UserMenu = () => {
       alignItems={'center'}
       gap={'20px'}
     >
-      <Text color="white" fontWeight="700">
+      <Text
+        color="white"
+        fontWeight="700"
+        border={'1px solid white'}
+        borderRadius={'5px'}
+        padding={'6px 15px'}
+      >
         Вітаю, {user.name}
       </Text>
       <Button
