@@ -111,7 +111,7 @@ export default function Register() {
               <Input
                 id="password"
                 name="password"
-                type="text"
+                type="password"
                 autoComplete="off"
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}

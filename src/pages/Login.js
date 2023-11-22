@@ -23,9 +23,7 @@ export default function Register() {
       password: '',
     },
     validationSchema: Yup.object({
-      password: Yup.string()
-        .max(10, 'Повинно бути не більше 10 символів')
-        .required(`Обов'язково`),
+      password: Yup.string().required(`Обов'язково`),
       email: Yup.string()
         .email('Невірний формат електронної адреси')
         .required(`Обов'язково`),
@@ -90,7 +88,7 @@ export default function Register() {
               <Input
                 id="password"
                 name="password"
-                type="text"
+                type="password"
                 autoComplete="off"
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
