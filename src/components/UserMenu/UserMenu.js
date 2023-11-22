@@ -28,7 +28,7 @@ export const UserMenu = () => {
         _activeLink={{ bg: 'white', color: 'black' }}
         marginLeft={4}
       >
-        Log Out
+        Вийти з акаунту
       </Button>
     </Box>
   );
